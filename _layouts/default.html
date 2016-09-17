@@ -1,33 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} Jack Daniels, Photographer </title>
-  <link rel="stylesheet" href="/css/styles.css" />
+    <!-- IE in quirks mode -->
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+    <meta charset=utf-8 />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>{% if page.title %} {{ page.title }} | {% endif %} Jack Daniels, Photographer</title>
 </head>
+
 <body>
-
-  <div id="main">
-
-    <header>
-      <h1> Jack Daniels Photograghy </h1>
-    <header>
-
-    <nav role="navigation">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/portfolio/">Portfolio</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    {{ content }}
-
-    <footer>
-      <p>@copy; Jack Daniels Photography 2016 | All Rights Reserved. </p>
-    </footer>
-
-  </div>
+    <div id="header"> header </div>
+    <div id="footer"> footer </div>
+    <div id="content"> {{ content }} </div>
 </body>
+
 </html>

@@ -3,6 +3,12 @@ body {
     padding: header-<length> 0 footer-<length> 0;
     background-color: black;
 }
+div#wrapper {
+  width: 1060px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: grey;
+}
 
 div#header {
     position: absolute;
@@ -39,5 +45,5 @@ html div#content {
   width: 960px;
     height: 100%;
     overflow: auto;
-    background-color: grey;
+    background-color: white;
 }

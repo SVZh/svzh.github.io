@@ -1,18 +1,83 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <!-- IE in quirks mode -->
-    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
-    <meta charset=utf-8 />
-    <link rel="stylesheet" href="/css/styles.css" />
+  <head>
     <title>{% if page.title %} {{ page.title }} | {% endif %} Jack Daniels, Photographer</title>
-</head>
+    <meta charset=utf-8 />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="script" href="/js/bootstrap.min.js" />
+    <link rel="stylesheet" media="all and (min-width: 1px) and (max-width: 320px)" href="/css/style320.css" />
+    <link rel="stylesheet" media="all and (min-width: 321px) and (max-width: 480px)" href="/css/style480.css" />
+    <link rel="stylesheet" media="all and (min-width: 481px) and (max-width: 800px)" href="/css/style800.css" />
+    <link rel="stylesheet" media="all and (min-width: 801px) and (max-width: 4000px)" href="/css/style4000.css" />
+  </head>
 
-<body>
-    <div id="header"> header </div>
-    <div id="footer"> footer </div>
-    <div id="content"> {{ content }} </div>
-</body>
 
+  <body class="body1">
+  	<header>
+  		<div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-default navbar-static-top">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav" aria-expanded="false">
+              <span class="sr-only">Меню</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            </div>
+              <div class="collapse navbar-collapse" id="topnav">
+                <ul id="ul1" class="nav navbar-nav ul1">Home</ul>
+                <ul id="ul2" class="nav navbar-nav ul2">Portfolio</ul>
+                <ul id="ul3" class="nav navbar-nav ul3">About</ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div>
+          <div class="col-md-12">
+            <nav>
+              <div>
+                <div id="banner-bg" class="cf"> <!--фон для банера -->
+                <div id="banner" class="row">
+                  <div id="logo-area" class="col-md-5">
+                    <h1 class="site-name"><a class="nounderline" href="http://localhost:4000">Jack Daniels<br />Photography</a><br /></h1>
+                    <h2 class="site-description">Всякая портфолия<br /></h2>
+                  </div>
+                  <div class="search1">
+                    <div id="search" class="col-md-6">
+                      <div id="form-groop">тут будет форма поиска</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="line"> </div>
+                <div id="breadcrumb">
+                  <div id="bread">
+                    <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+                      <ol class="breadcrumbs">
+                        {% for p in page.ancestors %}
+                          <li><a href="{{ p.url }}">{{ p.title }}</a>
+                          <li class="divider">&gt;</li>
+                        {% endfor %}
+                      	<li class="active">{{ page.title }}</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="line"></div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+  	</header>
+    <div class="container">
+      <div class="col-md-12">
+        {{ content }}
+      </div>
+    </div>
+  </body>
 </html>

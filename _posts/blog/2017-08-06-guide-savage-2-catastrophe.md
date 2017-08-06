@@ -3,7 +3,7 @@ layout: post
 title: Deltascape v2.0 (Savage) - Catastrophe
 excerpt: "Гайд по второму саважу из патча 4.05"
 modified: 2017-08-06
-categories: articles
+categories: blog
 tags: [guide]
 comments: true
 share: true

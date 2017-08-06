@@ -1,8 +1,9 @@
 # Site wide configuration
 
-title: Alfresco Development Guide For Complete Idiots
+# title: Alfresco Development Guide For Complete Idiots
+title: So?
 locale: en_US
-description: Trying to understand overly complex and mysterious process of Alfresco development together.
+# description: Trying to understand overly complex and mysterious process of Alfresco development together.
 logo: site-logo.png
 search: true
 url: https://svzh.github.io
